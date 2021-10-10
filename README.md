@@ -1,5 +1,8 @@
 # react-native-pdf-page-viewer
 
+#### This library fork by `react-native-pdf-light`, we add more function: `getBase64Image`, `isLocked`.
+
+
 PDF viewer for React Native. Implemented with platform native render functions
 for smallest deploy size impact, and restricted feature set to simplify
 integration with larger systems.
