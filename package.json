@@ -1,6 +1,6 @@
 {
   "name": "@khanhdh1303/rn-pdf-page-viewer",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Minimalist PDF viewer for React Native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -13,7 +13,7 @@
     "android",
     "ios",
     "cpp",
-    "react-native-pdf-page-viewer.podspec",
+    "rn-pdf-page-viewer.podspec",
     "!lib/typescript/example",
     "!android/build",
     "!ios/build",
