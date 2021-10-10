@@ -1,6 +1,6 @@
 {
-  "name": "react-native-pdf-light",
-  "version": "2.0.0-4",
+  "name": "@khanhdh1303/rn-pdf-page-viewer",
+  "version": "1.0.0",
   "description": "Minimalist PDF viewer for React Native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -13,7 +13,7 @@
     "android",
     "ios",
     "cpp",
-    "react-native-pdf-light.podspec",
+    "react-native-pdf-page-viewer.podspec",
     "!lib/typescript/example",
     "!android/build",
     "!ios/build",
@@ -21,29 +21,15 @@
     "!**/__fixtures__",
     "!**/__mocks__"
   ],
-  "scripts": {
-    "test": "jest",
-    "typescript": "tsc --noEmit",
-    "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "prepare": "bob build",
-    "release": "release-it",
-    "example": "yarn --cwd example",
-    "pods": "cd example && pod-install --quiet",
-    "bootstrap": "yarn example && yarn && yarn pods"
-  },
   "keywords": [
     "react-native",
     "pdf",
     "ios",
     "android"
   ],
-  "repository": "https://github.com/alpha0010/react-native-pdf-viewer",
-  "author": "alpha0010 <alpha0010@users.noreply.github.com> (https://github.com/alpha0010)",
+  "repository": "https://github.com/khanhduong1303/react-native-pdf-page-viewer",
+  "author": "khanhduong1303",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/alpha0010/react-native-pdf-viewer/issues"
-  },
-  "homepage": "https://github.com/alpha0010/react-native-pdf-viewer#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

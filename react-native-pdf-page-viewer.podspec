@@ -3,7 +3,7 @@ require "json"
 package = JSON.parse(File.read(File.join(__dir__, "package.json")))
 
 Pod::Spec.new do |s|
-  s.name         = "react-native-pdf-light"
+  s.name         = "rn-pdf-page-viewer"
   s.version      = package["version"]
   s.summary      = package["description"]
   s.homepage     = package["homepage"]
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.authors      = package["author"]
 
   s.platforms    = { :ios => "9.0" }
-  s.source       = { :git => "https://github.com/alpha0010/react-native-pdf-viewer.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/khanhduong1303/react-native-pdf-page-viewer.git", :tag => "#{s.version}" }
 
 
   s.source_files = "ios/**/*.{h,m,mm,swift}"

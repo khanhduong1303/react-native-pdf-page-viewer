@@ -1,7 +1,4 @@
-# react-native-pdf-light
-
-[![npm version](https://img.shields.io/npm/v/react-native-pdf-light)](https://www.npmjs.com/package/react-native-pdf-light)
-![CI](https://github.com/alpha0010/react-native-pdf-viewer/workflows/CI/badge.svg)
+# react-native-pdf-page-viewer
 
 PDF viewer for React Native. Implemented with platform native render functions
 for smallest deploy size impact, and restricted feature set to simplify
@@ -12,14 +9,15 @@ page render component to use as a building block for your own fully custom
 viewer.
 
 Uses `android.graphics.pdf.PdfRenderer` on Android and `CGPDFDocument` on iOS.
-Unlike many native components in the wild, `react-native-pdf-light` provides
+Unlike many native components in the wild, `react-native-pdf-page-viewer
+` provides
 full implementation of React Native shadow nodes. This simplifies UI
 development, since the component actually knows its own dimensions.
 
 ## Installation
 
 ```sh
-npm install react-native-pdf-light
+npm install @khanhdh1303/rn-pdf-page-viewer
 ```
 
 If iOS build fails with `Undefined symbol: __swift_FORCE_LOAD_...`, add an
@@ -28,7 +26,7 @@ empty `.swift` file to the xcode project.
 ## Usage
 
 ```js
-import { Pdf, PdfUtil } from 'react-native-pdf-light';
+import { Pdf, PdfUtil } from '@khanhdh1303/rn-pdf-page-viewer';
 
 PdfUtil.getPageCount(source).then(console.log);
 
@@ -37,7 +35,7 @@ PdfUtil.getPageCount(source).then(console.log);
 
 If creating your own custom viewer, import can be optimized to:
 ```js
-import { PdfView } from 'react-native-pdf-light/PdfView';
+import { PdfView } from '@khanhdh1303/rn-pdf-page-viewer';
 
 <PdfView page={page} source={source} />
 ```
@@ -95,6 +93,12 @@ Props:
 
 `PdfUtil.getPageSizes(source: string): Promise<{ height: number; width: number }[]>`
 - Get the dimensions of every page.
+
+`PdfUtil.getBase64Image(source: string, page: number): Promise<string>`
+- Get image(base64) of every page
+
+`PdfUtil.isLocked(source: string): Promise<boolean>`
+- Check pdf is protected with pwd (JUST FOR IOS), on android use try-catch, it's throw error if can't open pdf has pwd
 
 ## Known Issues
 
